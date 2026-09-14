@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IXICO — Game Artist</title>
+<meta name="description" content="IXICO — Game Artist Portfolio">
+
+<style>
+:root{
+  --bg:#f3f3f0;
+  --text:#111;
+  --muted:#777;
+  --line:#c9c9c3;
+  --max:1400px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial,Helvetica,"Hiragino Sans","Yu Gothic",sans-serif;
+  line-height:1.45;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%}
+
+.wrap{
+  width:min(calc(100% - 48px),var(--max));
+  margin:auto;
+}
+
+header{
+  min-height:88px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid var(--line);
+}
+.logo{
+  font-weight:700;
+  font-size:20px;
+}
+nav{
+  display:flex;
+  gap:24px;
+  font-size:12px;
+  font-weight:700;
+}
+nav a{opacity:.65}
+nav a:hover{opacity:1}
+
+.hero{
+  min-height:76vh;
+  padding:70px 0 50px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.eyebrow{
+  margin:0;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.08em;
+}
+h1{
+  margin:70px 0;
+  max-width:1100px;
+  font-size:clamp(54px,8.5vw,135px);
+  line-height:.9;
+  letter-spacing:-.065em;
+}
+.hero-note{
+  max-width:390px;
+  margin-left:auto;
+  color:var(--muted);
+}
+
+section{
+  padding:68px 0;
+  border-top:1px solid var(--line);
+}
+.section-head{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:32px;
+  font-size:12px;
+  font-weight:700;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:60px 24px;
+}
+.project-image{
+  aspect-ratio:4/3;
+  background:#ddd;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#777;
+  font-size:14px;
+}
+.project-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.25s ease;
+}
+.project:hover img{transform:scale(1.015)}
+.meta{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding-top:13px;
+}
+.meta h3{
+  margin:0 0 4px;
+  font-size:15px;
+}
+.meta p,.meta span{
+  margin:0;
+  color:var(--muted);
+  font-size:12px;
+}
+
+.split{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:30px;
+}
+.big-copy{
+  margin:0;
+  max-width:800px;
+  font-size:clamp(26px,3vw,46px);
+  line-height:1.08;
+  letter-spacing:-.04em;
+}
+.small-copy{
+  max-width:520px;
+  margin-top:28px;
+  color:var(--muted);
+  font-size:14px;
+}
+.links{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:8px;
+}
+.links a{
+  font-size:clamp(26px,3vw,46px);
+  line-height:1.1;
+  letter-spacing:-.04em;
+}
+.links a:hover{text-decoration:underline}
+
+footer{
+  min-height:100px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-top:1px solid var(--line);
+  font-size:11px;
+  color:var(--muted);
+}
+
+@media(max-width:760px){
+  .wrap{width:calc(100% - 28px)}
+  header{min-height:70px}
+  nav{gap:12px;font-size:10px}
+  .hero{min-height:70vh;padding:42px 0 34px}
+  h1{font-size:clamp(44px,14vw,75px);margin:55px 0}
+  .hero-note{margin-left:0}
+  section{padding:46px 0}
+  .grid{grid-template-columns:1fr;gap:42px}
+  .split{grid-template-columns:1fr;gap:34px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+<header>
+  <a class="logo" href="#top">IXICO</a>
+  <nav>
+    <a href="#work">WORK</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero" style="border-top:0">
+  <p class="eyebrow">GAME ARTIST</p>
+
+  <h1>
+    Character Design<br>
+    Concept Art<br>
+    Realtime VFX
+  </h1>
+
+  <p class="hero-note">
+    Selected works in game art, visual development and realtime effects.
+  </p>
+</section>
+
+<section id="work">
+  <div class="section-head">
+    <span>SELECTED WORKS</span>
+    <span>2026</span>
+  </div>
+
+  <div class="grid">
+
+    <a class="project" href="#">
+      <div class="project-image">
+        <!-- 替换成：<img src="你的图片网址"> -->
+        PROJECT IMAGE 01
+      </div>
+      <div class="meta">
+        <div>
+          <h3>MASK IT</h3>
+          <p>Game Project / Art Lead</p>
+        </div>
+        <span>01</span>
+      </div>
+    </a>
+
+    <a class="project" href="#">
+      <div class="project-image">
+        PROJECT IMAGE 02
+      </div>
+      <div class="meta">
+        <div>
+          <h3>CHARACTER DESIGN</h3>
+          <p>Character / Costume / Props</p>
+        </div>
+        <span>02</span>
+      </div>
+    </a>
+
+    <a class="project" href="#">
+      <div class="project-image">
+        PROJECT IMAGE 03
+      </div>
+      <div class="meta">
+        <div>
+          <h3>CONCEPT / ENVIRONMENT</h3>
+          <p>Visual Development</p>
+        </div>
+        <span>03</span>
+      </div>
+    </a>
+
+    <a class="project" href="#">
+      <div class="project-image">
+        PROJECT IMAGE 04
+      </div>
+      <div class="meta">
+        <div>
+          <h3>REALTIME VFX</h3>
+          <p>Unreal Engine / Niagara</p>
+        </div>
+        <span>04</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<section id="about" class="split">
+  <p class="eyebrow">ABOUT</p>
+
+  <div>
+    <p class="big-copy">
+      I’m IXICO, a game artist based in Japan.
+      My work focuses on character design, concept art,
+      visual development and realtime VFX.
+    </p>
+
+    <p class="small-copy">
+      Currently studying CG and building a portfolio for the game industry.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="split">
+  <p class="eyebrow">CONTACT</p>
+
+  <div class="links">
+    <a href="mailto:your@email.com">your@email.com</a>
+    <a href="#" target="_blank">X / Twitter</a>
+    <a href="#" target="_blank">Instagram</a>
+    <a href="#" target="_blank">VGen</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span>IXICO © 2026</span>
+  <a href="#top">BACK TO TOP ↑</a>
+</footer>
+
+</div>
+
+</body>
+</html>
